@@ -115,8 +115,7 @@ function update(){
         checkWin();
     }
     
-    
-    if (card1Selected.src != card2Selected.src){
+    else if (card1Selected.src != card2Selected.src){
         card1Selected.src = "Images/background.jpg";
         card2Selected.src = "Images/background.jpg";
         errors +=1
