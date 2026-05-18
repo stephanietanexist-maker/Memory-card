@@ -4,7 +4,7 @@ body {
 }
 
 #board {
-    height: 532px;
+    height: 550px;
     width: 475px;
     margin: 0 auto;
     background-color: lightblue;
@@ -16,5 +16,6 @@ body {
     height:128px;
     width: 90px;
     margin: 2.5px;
+    border-radius: 25px;
 
 }
