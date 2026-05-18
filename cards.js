@@ -7,16 +7,16 @@ var matchedPairs = 0;
 var errors = 0;
 
 var cardList = [
-    "Seal 1.jpg",
-    "Seal 2.jpg",
-    "Seal 3.png",
-    "Seal 4.png",
-    "Seal 5.jpg",
-    "Seal 6.png",
-    "Seal 7.png",
-    "Seal 8.jpg",
-    "Seal 9.jpg",
-    "Seal 10.png"
+    "Seal1.jpg",
+    "Seal2.jpg",
+    "Seal3.png",
+    "Seal4.png",
+    "Seal5.jpg",
+    "Seal6.png",
+    "Seal7.png",
+    "Seal8.jpg",
+    "Seal9.jpg",
+    "Seal10.png"
 ]
 
 var cardSet;
