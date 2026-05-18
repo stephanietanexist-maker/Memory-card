@@ -58,7 +58,7 @@ function startGame() {
 
             let card = document.createElement("img");
             card.id = r.toString()+ "-" +c.toString();
-            card.src = "Images"+ cardImg;
+            card.src = "Images/"+ cardImg;
             card.classList.add ("card");
             card.addEventListener("click", selectCard);
             document.getElementById("board").append(card);
@@ -73,7 +73,7 @@ function hideCards(){
     for (let r = 0; r < rows; r++){
         for (let c = 0; c < columns; c++){
             let card = document.getElementById(r.toString() + "-" +c.toString());
-            card.src = "images/background.jpg";
+            card.src = "Images/background.jpg";
         }
     }
 }
@@ -90,7 +90,7 @@ function selectCard() {
             let r = parseInt(coords[0]);
             let c = parseInt(coords[1]);
 
-            card1Selected.src = "images/" + board[r][c];
+            card1Selected.src = "Images/" + board[r][c];
         }
 
         else if (!card2Selected && this != card1Selected) {
@@ -101,7 +101,7 @@ function selectCard() {
             let r = parseInt(coords[0]);
             let c = parseInt(coords[1]);
 
-            card2Selected.src = "images/" + board[r][c];
+            card2Selected.src = "Images/" + board[r][c];
 
             setTimeout(update, 1000);
         }
