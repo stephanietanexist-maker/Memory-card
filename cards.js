@@ -117,8 +117,8 @@ function update(){
     
     
     if (card1Selected.src != card2Selected.src){
-        card1Selected.src = "images/background.jpg";
-        card2Selected.src = "images/background.jpg";
+        card1Selected.src = "Images/background.jpg";
+        card2Selected.src = "Images/background.jpg";
         errors +=1
         document.getElementById ("errors").innerText = errors;
 
