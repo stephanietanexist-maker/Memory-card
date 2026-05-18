@@ -58,7 +58,7 @@ function startGame() {
 
             let card = document.createElement("img");
             card.id = r.toString()+ "-" +c.toString();
-            card.src = "Images/"+ cardImg;
+            card.src = "Images"+ cardImg;
             card.classList.add ("card");
             card.addEventListener("click", selectCard);
             document.getElementById("board").append(card);
