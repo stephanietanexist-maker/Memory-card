@@ -1,3 +1,9 @@
+//timer stuff
+var time = 0;
+var timer = 0;
+var timerstarted = false;
+var matchedPairs = 0;
+
 var errors = 0;
 
 var cardList = [
@@ -21,9 +27,11 @@ var columns = 5;
 var card1Selected;
 var card2Selected; 
 
+//main commands
 window.onload = function (){
     shuffleCards();
     startGame();
+    startTimer();
 }
 
 function shuffleCards(){
@@ -102,6 +110,12 @@ function selectCard() {
 
 function update(){
     //if the cards aren't the same
+    if (card1Selected.src == card2Selected.src){
+        matchedPairs +=1;
+        checkWin();
+    }
+    
+    
     if (card1Selected.src != card2Selected.src){
         card1Selected.src = "images/background.jpg";
         card2Selected.src = "images/background.jpg";
@@ -111,4 +125,17 @@ function update(){
     }
     card1Selected = null;
     card2Selected = null;
+}
+
+function startTimer (){
+    timer = setInterval(function(){
+        time +=1
+        document.getElementById("time").innerText = time;
+    }, 1000 );
+}
+
+function checkWin(){
+    if (matchedPairs == 10){
+        clearInterval(timer);
+    }
 }
