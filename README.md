@@ -11,3 +11,5 @@ Images were taken off of google
 
 ![image alt](https://github.com/stephanietanexist-maker/Memory-card/blob/2c231cd90e38f1f6e98e5c5aebfcaf762de91b9b/Screenshot%202026-05-18%20154306.png)
 Demo: https://stephanietanexist-maker.github.io/Memory-card/
+
+ps. Don't mind the number of commits I have since I was struggling to find the bug that wouldn't let the web load 😔
